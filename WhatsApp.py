@@ -10,6 +10,10 @@ from Crypto.Cipher import AES
 from Crypto import Random
 import base64
 
+
+# used some functions from 
+# https://github.com/andreacorbellini/ecc/blob/master/scripts/ecdsa.py
+
 EllipticCurve = collections.namedtuple('EllipticCurve', 'name p a b g n h')
 
 curve = EllipticCurve(
